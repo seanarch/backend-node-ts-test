@@ -18,5 +18,8 @@ db.once("open", () => {
 
 app.use(express.json());
 
+const PlanetsRouter = require("./routes/planets.router");
+app.use("/planets", PlanetsRouter);
+
 app.listen(3001, () => console.log("Listening on port 3001"));
 console.log(new Date());

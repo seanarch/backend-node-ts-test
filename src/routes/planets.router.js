@@ -23,3 +23,5 @@ router.patch("/", async (req, res) => {});
 
 // Delete one
 router.delete("/", async (req, res) => {});
+
+module.exports = router;
